@@ -3,7 +3,7 @@ class Solution:
         n:int = len(ransomNote)
         flag:bool = True
         i:int = 0
-        while i < n:
+        while i < n and flag == True:
             if ransomNote.count(ransomNote[i]) > magazine.count(ransomNote[i]):
                 flag=False
             i+=1
